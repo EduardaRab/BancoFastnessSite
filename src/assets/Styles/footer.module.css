@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: rgba(233, 220, 182, 1);
+    padding: 3%;
+}
+
+.logo{
+    display: flex;
+}
+
+.logomarca{
+    display: flex;
+    align-items: center;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5%;
+}
+
+.atencao{
+    padding-top: 2.5%;
+}
+
+/*Configurando a responsividade*/
+@media screen and (max-width: 934px){
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagens{
+        width: 10%;
+    }
+    
+    .acompanhe{
+        margin-bottom: 5%;
+    }
+
+    .contatos{
+        margin-bottom: 5%;
+    }
+
+    .ajuda{
+        margin-bottom: 5%;
+    }
+}

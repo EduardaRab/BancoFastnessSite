@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #E9DCB6;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista{
+    font-family: 'Roboto';
+    font-size: 1em;
+    list-style-type: none; /*removendo o icone da lista*/
+    display: flex;
+    margin-top: 2%;
+}
+
+.item{
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+/*atribuindo animação*/
+.link:hover{
+    color: #fff;
+}
+
+/*Configuração de responsividade*/
+@media screen and (max-width: 810px){
+    .lista{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .lista{
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .lista{
+        font-size: 0.4em;
+    }
+}

@@ -1,0 +1,16 @@
+.imagem{
+    width: auto;
+}
+
+/*Configuração de responsividade*/
+@media screen and (max-width: 460px){
+    .imagem{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .imagem{
+        width: 100px;
+    }
+}

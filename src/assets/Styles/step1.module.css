@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 3%;
+    background-color: rgba(233, 220, 182, 1);
+}
+
+.titulo{
+    padding-bottom: 2%;
+}

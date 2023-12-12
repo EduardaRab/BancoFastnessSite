@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 2%;
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgba(153, 121, 40, 1);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+.imagem{
+    width: auto;
+    padding-bottom: 3%;
+}
+
+/*Configurando a responsividade*/
+@media screen and (max-width: 829px){
+    .imagem{
+        width: 50%;
+    }
+
+    .container{
+        width: 100px;
+        height: 150px;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .container{
+        width: 70px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .container{
+        margin-bottom: 2%;
+    }
+}
+

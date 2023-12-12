@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap); /*importando a fonte do google para o site*/
+
+*{ /*removendo todas as margins e paddings pré configuradas*/
+    margin: 0;
+    padding: 0;
+}
+
+.botao{ /*estilo do botão*/
+    width: 140px;
+    background-color: #CBA135;
+    padding: 10%;
+    border-radius: 15px;
+    align-items: center;
+    border: 0;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+/*Configurando as animações do botão*/
+.botao:hover { 
+    box-shadow: 5px 5px 5px #00000034; /*adiciona sombra quando o mouse passa em cima do botão*/
+    color: black;
+}
+
+.botao:focus,
+.botao:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color; /*adiciona uma borda quando o botão é clicado*/
+}
+
+.txt{
+    font-family: 'Roboto';
+    padding-left: 1%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*Configurando a responsividade do botão, de forma que o tamanho e texto diminua*/
+@media screen and (max-width: 800px){
+    .botao{
+        width: 100px;
+    }
+    
+    .imagem{
+        width: auto;
+    }
+
+    .txt{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .botao{
+        width: 90px;
+        height: 40px;
+    }
+    
+    .imagem{
+        width: 20px
+    }
+
+    .txt{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .botao{
+        width: 70px;
+        height: 20px;
+    }
+    
+    .imagem{
+        width: 10px
+    }
+
+    .txt{
+        font-size: 0.7em;
+    }
+}

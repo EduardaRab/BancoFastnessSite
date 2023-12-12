@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #E9DCB6;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5%;
+    border-bottom: solid 1.5px  rgba(153, 121, 40, 1);
+    border-top: solid 1.5px  rgba(153, 121, 40, 1);
+}
+
+.lista{
+    font-family: 'Roboto';
+    font-size: 1em;
+    list-style-type: none; /*removendo o icone da lista*/
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/*atribuindo animação*/
+.link:hover{
+    color: rgba(153, 121, 40, 1);
+}
+
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.imagem{
+    width: 15%;
+    padding-right: 3%;
+}
+
+/*Configuração de responsividade*/
+@media screen and (max-width: 780px){
+    .lista{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .imagem{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .lista{
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .lista{
+        font-size: 0.3em;
+    }
+
+    .imagem{
+        width: 7%;
+    }
+}

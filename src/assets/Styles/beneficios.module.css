@@ -1,0 +1,30 @@
+/*Estilo da parte de beneficios do site*/
+*{ /*removendo todas as margins e paddings pré configuradas*/
+    margin: 0;
+    padding: 0;
+}
+
+.container{ /*espaçamento padrão do container*/
+    padding: 3%;
+}
+
+.titulo{
+    padding-bottom: 3%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Configurações de responsividade*/
+@media screen and (max-width: 361px){
+    .cards{
+        display: grid;
+        justify-content: center;
+    }
+
+    .card{
+        margin-bottom: 50%;
+    }
+}

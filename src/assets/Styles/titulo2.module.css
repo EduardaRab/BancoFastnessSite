@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap); /*importando a fonte do site*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.texto{
+    font-family: 'Roboto';
+    font-size: 1.1em;
+    padding-bottom: 2%;
+}
+
+/*Configuração de responsividade*/
+@media screen and (max-width: 609px){
+    .texto{
+        font-size: 0.7em;
+    }
+}

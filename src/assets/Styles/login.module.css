@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    padding: 3%;
+    padding-bottom: 0;
+}
+
+.formulario{
+    display: grid;
+    justify-items: center;
+}
+
+.form{
+    border: solid 2px #CBA135;
+    border-radius: 20px;
+    padding: 3%;
+    margin: 3%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: fit-content; /*se adapta ao tamanho do conteúdo*/
+}
+
+.instrucao{
+    padding-bottom: 2.5%;
+}
+
+.labels{
+    padding-bottom: 1%;
+}
+
+.inputs{
+    height: 30px;
+    width: 400px;
+    margin-bottom: 3%;
+    border: solid 2px #CBA135;
+    border-radius: 12px;
+    font-size: 1em;
+    padding: 0.5%;
+}
+
+.btn{
+    display: grid;
+    justify-items: center;
+}
+
+.submit{
+    border-color: #49CE3F;
+    width: 200px;
+    height: 70px;
+    background-color: #49CE3F;
+    display: grid;
+    justify-content: center;
+    font-size: 1.5em;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+/*atribuindo animação*/
+.submit:hover {
+    box-shadow: 7px 7px 7px #00000034; /*adiciona sombra quando o mouse passa em cima do botão*/
+    color: black;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.textos{
+    padding-top: 3%;
+    display: grid;
+    justify-items: center;
+}
+
+.cadastro{
+    padding-top: 1%;
+    font-family: 'Roboto';
+    font-size: 1.35em;
+    color: black;
+}
+
+/*Configuração de responsividade*/
+@media screen and (max-width: 609px){
+    label{
+        font-size: 0.7em;
+    }
+
+    .inputs{
+        font-size: 0.7em;
+        height: 25px;
+        width: 300px;
+    }
+
+    .cadastro{
+        font-size: 0.8em;
+    }
+
+    .submit{
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .inputs{
+        height: 25px;
+        width: 250px;
+    }
+
+    .submit{
+        width: 80px;
+        height: 30px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 310px){
+    .inputs{
+        height: 20px;
+        width: 200px;
+        padding: 2%;
+    }
+
+    .submit{
+        width: 80px;
+        height: 30px;
+        font-size: 0.7em;
+    }
+}
